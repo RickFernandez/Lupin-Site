@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    background-color: #fff;
+
+}
+
+/*LOGO*/
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+
+.logotext {
+    width: 20%;
+    font-weight: 600;
+    display: flex;
+
+}
+
+.menu {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1rem;
+    color: rgb(32, 88, 153);
+    display: flex;
+    margin: auto;
+}
+
+.menu__lista {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0px 20px
+}
+
+.menulink {
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+
+}
+
+.menulink:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*HOME INDEX*/
+.homevideo {
+    margin: auto;
+    width: 95%;
+    min-width: 95%;
+    min-height: 80vh;
+    /*isto fará o elemento video e o .homevideo__conteudo se adaptarem ao .homevideo*/
+    position: relative;
+
+}
+
+.homevideo video {
+    position: absolute;
+    z-index: -1;
+    /*apenas um -1 é necessário quando se trabalha com relative + absolute, sendo pai e filho*/
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* evita do video passar a altura desejada do .homevideo */
+
+}
+
+.homevideo__conteudo {
+    width: 100%;
+    min-width: 100%;
+    min-height: 80vh;
+    text-align: center;
+}
+
+
+.homevideo__titulo {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 900;
+    padding-top: 200px;
+    /*centraliza o texto*/
+}
+
+.homevideo__texto {
+    color: #fff;
+    font-size: 2rem;
+
+}
+
+.introducao {
+    font-family: 'Urbanist', sans-serif;
+    margin: 20px auto;
+    width: 95%;
+    color: #000;
+    border-radius: 10px;
+    line-height: 2 rem;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+.conteudo {
+    font-family: 'Urbanist', sans-serif;
+    margin: 20px auto;
+    width: 95%;
+    background: rgba(0, 0, 0, 0.1);
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 1, 5rem;
+    font-size: 24px;
+    text-align: center;
+}
+
+.pconteudo {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.icones {
+    width: 30px;
+    height: 30px;
+}
+
+.pontosturisticos {
+    width: 95%;
+    min-height: 50vh;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 33%;
+    min-height: 30vh;
+    text-align: center;
+
+}
+
+.card:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card__titulo {
+
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 900;
+    color: #000;
+}
+
+.card__texto {
+
+    font-size: 22px;
+    line-height: 2rem;
+    text-align: center;
+    color: #000;
+
+}
+
+.imgcard {
+    width: 300px;
+    height: 300px;
+}
+
+
+.card__link {
+    text-decoration: none;
+}
+
+
+
+footer {
+    font-family: 'Urbanist', sans-serif;
+    width: 95%;
+
+    margin-block-end: 20px auto;
+
+    margin: 20px auto;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+    border-radius: 10px;
+}
+
+
+.maisinformacoes {
+
+    width: 95%;
+    min-height: 100vh;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.card1 {
+    width: 95%;
+    min-height: 50vh;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+.card2 {
+    width: 50%;
+    min-height: 30vh;
+    text-align: justify;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/*BOTÃO VOLTAR*/
+#logovoltar {
+    width: 150px;
+    height: 150px;
+}
+
+.avoltarpag {
+    text-decoration: none;
+}
+
+.voltarpag {
+    text-align: center;
+}
+
+
+.botaovoltar {
+    text-decoration: none;
+    font-weight: 400;
+    color: #000;
+}
+
+.botaovoltar:hover {
+
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+/*HOMES DOS PONTOS*/
+
+.containerimagem {
+    margin: auto;
+    width: 95%;
+    min-width: 95%;
+    min-height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containerimagem img {
+    position: absolute;
+    z-index: -1;
+    /*apenas um -1 é necessário quando se trabalha com relative + absolute, sendo pai e filho*/
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.containerimagem__conteudo {
+    width: 100%;
+    min-width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.containerimagem__titulo {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+
+}
+
+.containerimagem__texto {
+    width: auto;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/*CONTATOS*/
+
+.faleconosco {
+    width: 95%;
+    min-width: 95%;
+    margin: 20px auto;
+    height: auto;
+    background-color: rgba(3, 78, 112, 0.719);
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;  
+    flex-wrap: wrap;
+
+}
+  
+
+.faleconoscoform {
+        
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+input[type="text"] {
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+input[type="email"] {
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.boxinput{
+ margin: 5px;
+}
+
+.boxlabel{
+    width: 400px;   
+    height: 50px ; 
+    
+    text-align: center;    
+   }
+
+textarea {
+    resize: none;
+    width: 400px;
+    height: 100px ;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+input[type="submit"] {
+    width: 400px;
+    height: 40px;
+    margin: 10px auto;
+    background-color: rgba(5, 2, 2, 0.2);
+    color: #fff;
+    border: solid 1px;
+    border-color: rgba(5, 2, 2, 0.2);
+    border-radius: 10px;    
+  
+}
+    input[type="submit"]:hover {
+        background-color: rgba(5, 2, 2, 0.6);
+    }
